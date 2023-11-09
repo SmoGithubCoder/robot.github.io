@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Cours Github</h1>
+<h2>Version 1</h2>
+
+<p>    
+    If a Visualforce page uses the standard controller to display Shared Activities events, use API version 26.0 or later.
+    If a task or event is related to a lead, you can’t relate the activity to additional contacts.
+    When more than one contact is related to an event, activity reports don’t show child events to that event if they’re assigned to users who aren’t below you in the role hierarchy.
+    If you enable Shared Activities, then an activity is also related to each contact’s primary account.
+    If you enable Shared Activities, the last activity date on account records is based on the activities that roll up to the account via the Related To field. However, if the Related To field is blank, the activities are based on the primary contact’s account. The last activity date for contacts and leads is based on only the activities where the contact or lead is the primary contact on the activity.
+    If you enable Shared Activities, users must designate one contact as the primary contact on the activity. If you delete the primary contact, the next contact on the activity’s related list becomes the new primary contact. Or you can manually edit the activity to select a primary contact. Lists and reports display primary and secondary contacts differently.
+    When you select Save & New from a task or event, only the primary contact is added automatically to the new record. Be sure add any additional contacts, as needed.
+    If you don’t enable Shared Activities, custom reports based on activity relationships:
+        Show only invitees to an event but not the organizer.
+        Don’t show events to which no one has been invited.
+    If you don’t enable Shared Activities, custom report types that use activity custom lookup field relationships aren’t supported.
+    If you don’t enable Shared Activities and a sales rep sends an email to multiple contacts, Salesforce creates a closed task for each contact. As a result, Salesforce creates duplicate records instead of just one task corresponding to the email.
+    If your Activity sharing setting is set to Private, users with access to parent records have read-only access to your activities.
+
+</p>
+
+<p>
+Considerations for Disabling Roll Up of Activities to a Contact’s Primary Account
+The account an activity rolls up to depends on the Related To field, the Name field, the Shared Activities setting, and if the setting for Roll up activities to a contact's primary account is enabled. Before deciding whether to change this default roll up behavior, review these considerations.
+Required Editions
+Available in: Lightning Experience and Salesforce Classic
+Available in: All Editions
+Note
+Note To roll up activities, enable shared activities first.
+
+When you change the roll up setting, only new activities are affected. Existing activities are only affected if they’re updated in a way that causes the roll up to be recalculated, such as when an activity is closed.
+If the relationship in the Related To field is to an account, opportunity, contract, or custom object that has an account parent to the entity, the activity rolls up to that entry. Activities that roll up to an account via the Related To field determine the last activity date on the account.
+    The Name field on activities is ignored when determining an account’s last activity date, if the activity is related to an account.
+If the Related To field is blank, the setting for Roll up activities to a contact's primary account determines whether this activity establishes the last activity date of the primary contact's primary account.
+The last activity date for contacts and leads is based on the activities where the contact or lead is the primary contact on the activity.
+If you create an activity while converting a lead but don’t create an opportunity from the lead, the activity doesn’t roll up to the lead’s primary account regardless of what’s specified by the activity rollup setting.
+In Salesforce Classic, changing the rollup behavior doesn’t affect person accounts. When an activity is related to a person account via either the Related To field or the Name field, the activity appears on the person account record. That’s because a person account is its own primary accoun
+</p>
+
+<p>
+    Best Regards my Friends !!!
+</p>
+</body>
+</html>
+
+
+
+
